@@ -3872,4 +3872,13 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 We encourage you to fork this guide and change the rules to fit your team’s style guide. Below, you may list some amendments to the style guide. This allows you to periodically update your style guide without having to deal with merge conflicts.
 
+- Amendment to [6.1](#strings--quotes): Opt for double quotes instead of single quotes. It's more like natural language.
+- Amendment to [7.1](#functions--declarations): Feel free to define functions in ways other than the named functions rule. Although the initial rule protects against Javascript's hoisting behavior, the code is more readable without it. You can just take advantage of the hoisting behavior when necessary.
+
+The below rules were inspired by the [Typescript coding guidelines](https://github.com/Microsoft/TypeScript/wiki/Coding-guidelines).
+
+- Prefer `undefined` over `null`. This is for ease of checking as our codebase grows larger, and is easier for type-checking in Typescript.
+- Use a single declaration per variable statement (i.e. use `let x = 1; let y = 2;` over `let x = 1, y = 2;`).
+- Within a file, type definitions should come first.
+
 # };
